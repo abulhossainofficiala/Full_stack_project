@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2 style="color: blanchedalmond; background-color: black; text-align: center; font-size: 60px;">We are learning html form</h2>
+    <form action="">
+     <fieldset style="background-color: antiquewhite;">
+        <legend style="color: red; font-size: 30px;"> Registration Form</legend>
+           <!-- name field -->
+      <label style="color: dodgerblue;" for="name">First Name</label><span style="color: red;">*</span>
+      <input type="text" placeholder="Enter Your Name" id="name" required > <br> <br>
+       <!-- email  --> 
+      <label style="color: dodgerblue;" for="email">Email</label><span style="color: red;">*</span>
+      <input type="email" placeholder="ex. hello@gmail.com" id="email" required> <br> <br>
+
+      <!-- phone number  -->
+
+      <label style="color: dodgerblue;" for="phone">Phone Number </label><span style="color: red;">*</span>
+      <input type="number" placeholder="ex. +88017xx-xxxxxx" id="phone" required> <br> <br>
+
+      <!-- Password  -->
+      <label style="color: dodgerblue;" for="Password">Password </label><span style="color: red;">*</span>
+      <input type="password" placeholder="" id="Password" required> <br> <br>
+
+      <!-- select country dropdown  -->
+
+      <label for="country">Select Country</label>
+      <select id="country">
+        <option value="select">select</option>
+       <option value="Bangladesh">Bangladesh</option>
+       <option value="indiya">Indiya</option>
+       <option value="Pakistan">Pakistan</option>
+      </select> <br> <br> 
+      <!-- date of birth  -->
+
+      <label style="color: dodgerblue;" for="date">Date of Birth </label><span style="color: red;">*</span>
+      <input type="date" placeholder="" id="date" required> <br> <br>
+
+      <!-- upload file  -->
+        <label for="file"> Upload Your Document</label>
+        <input type="file" id="file"> <br><br>
+
+        <!-- radio button  -->
+        <label for="file"> Choose Gender</label> <br> 
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" id="Others" name="gender">
+        <label for="Others">Others</label> <br><br>
+
+        <!-- checkbox  -->
+        <!-- <label for="file"> Choose Gender</label> <br> 
+        <input type="checkbox" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="checkbox" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="checkbox" id="Others" name="gender">
+        <label for="Others">Others</label> <br><br> -->
+
+        <input type="checkbox" required id="check">
+        <label for="check"> Agree to <a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank">Terms and Conditions</a> </label>
+
+
+       <br><br>  
+      <!-- <button type="submit">Submit</button> -->
+      <input type="submit" value="Contact Me" style="color: antiquewhite; background-color: black;">
+      <input type="reset" value="Reset" style="color: aqua; background-color: black;">
+     </fieldset>
+    </form>
+</body>
+</html>

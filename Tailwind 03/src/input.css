@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 99%, 74% 90%, 49% 100%, 22% 89%, 0 100%, 0% 35%, 0 0);
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+}
+
+@layer base{
+    h1{
+        @apply sm:text-4xl md:text-6xl md:leading-10 text-3xl mb-4 font-bold text-white;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center bg-gradient-to-r from-headingcolor to-Purple border-0 py-2 px-3 focus:outline-none rounded-full text-base mt-4 md:mt-0 text-white
+    }
+}

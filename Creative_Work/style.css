@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+}
+
+header{
+    padding: 30px;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    margin-top: 5px;
+}
+
+a{
+text-decoration: none;
+color: #385F96;
+}
+
+img{
+    max-width: 100%;
+}
+
+.primary-btn a{
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #385F96;
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    display: inline-block;
+}
+
+.primary-btn a:hover{
+    background-color: rgb(33, 121, 197);
+    color: black;
+}
+/* hero section  */
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-wrapper > * {
+    flex-basis: 100%;
+}
+
+.hero-scetion{
+    padding: 50px 0;
+}
+
+.hero-content h2 {
+    position: relative;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-content h2::before {
+    content: "";
+    width: 179px;
+    height: 189px;
+    background-image: url("./img/bgone.png");
+    background-size: cover;
+    position: absolute;
+    top: -90px;
+    left: -98px;
+    z-index: -1;
+}
+
+.hero-content h2::after {
+    content: "";
+    width: 50%;
+    height: 4px;
+    background-color: rgb(125, 206, 206);
+    position: absolute;
+    top: 37px;
+    left: 90px;
+    z-index: -1;
+}
+
+.hero-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-right: 55px;
+}
+
+.hero-btn{
+    background-color: #385F96;
+    padding: 10px 20px;
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+}
+.hero-btn:hover{
+    background-color: aquamarine;
+    color: #385F96;
+}
+
+
+/* do section  */
+.do-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.do-wrapper > * {
+    flex-basis: 100%;
+}
+
+.do-section{
+    padding: 80px 0;
+}
+
+.do-content h2{
+    position: relative;
+    font-size: 49px;
+    padding-bottom: 30px;
+}
+
+
+.do-content h2::after {
+    content: "";
+    width: 18%;
+    height: 16px;
+    background-color:#44D1D9;
+    position: absolute;
+    top: -25px;
+    left: -0px;
+    /* z-index: -1;  */
+}
+
+.do-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-right: 55px;
+}
+
+.do-btn{
+    background-color: #385F96;
+    padding: 10px 20px;
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+}
+.do-btn:hover{
+    background-color: rgb(155, 127, 255);
+    color: #385F96;
+}
+
+.we-section{
+    background-image: url(./img/bg.png);
+}
+
+.we-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.we-section{
+    padding: 80px 0;
+}
+
+.we-content h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    margin-bottom: 20px;
+}
+
+.we-btn{
+    background-color: #385F96;
+    padding: 10px 20px;
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+}
+.we-btn:hover{
+    background-color: rgb(255, 208, 127);
+    color: #385F96;
+}
+
+/* footer section  */
+
+.footer-section{
+    height: 40px;
+    background-color: #385F96;
+}
+
+.footer{
+    text-align: center;
+     padding-top: 7px;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+     .navigation{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;   
+     }
+
+     .hero-wrapper{
+        flex-direction: column;
+     }
+
+     .hero-content h2{
+        font-size: 24px;
+     }
+
+     .hero-content h2::after {
+         content: "";
+         width: 30%;
+         height: 2px;
+         background-color: rgb(125, 206, 206);
+         position: absolute;
+         top: 15px;
+         left: 90px;
+         z-index: -1;
+} 
+
+      .do-wrapper{
+          flex-direction: column;
+     }
+
+      .do-content h2{
+          font-size: 24px;
+     }
+
+     .we-wrapper{
+        flex-direction: column;
+   }
+
+    .we-content h2{
+        font-size: 24px;
+   }
+}
